@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Container, Typography, Stack } from "@mui/material";
-
 import UserForm from "./components/UserForm";
 import UserList from "./components/UserList";
 import type { User } from "./types/user";
@@ -21,7 +20,7 @@ function App() {
   };
 
   useEffect(() => {
-      loadUsers();
+    loadUsers();
   }, []);
 
   const handleSubmit = async (user: User) => {

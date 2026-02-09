@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "../App.css";
 import { TextField, Button, Stack } from "@mui/material";
 import { userFormConfig } from "../config/userFormConfig";
 import type { User } from "../types/user";
@@ -17,16 +16,12 @@ const emptyUser: User = {
 };
 
 export default function UserForm({ onSubmit, selectedUser }: Props) {
-const [formData, setFormData] = useState<User>(
-  selectedUser ?? emptyUser
-);
+  const [formData, setFormData] = useState<User>(emptyUser);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-useEffect(() => {
-  if (selectedUser) {
-    setFormData(selectedUser);
-  }
-}, [selectedUser]);
+  useEffect(() => {
+    if (selectedUser) setFormData(selectedUser);
+  }, [selectedUser]);
 
   const handleChange = (name: string, value: string) => {
     setFormData(prev => ({ ...prev, [name]: value }));
