@@ -29,5 +29,5 @@ The application is designed with extensibility in mind, allowing new form fields
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/userhub-react-crud.git
+git clone https://github.com/ShailajaTripathi/userhub-react-crud
 cd userhub-react-crud
