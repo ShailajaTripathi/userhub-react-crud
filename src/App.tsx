@@ -3,6 +3,7 @@ import { Container, Typography, Stack } from "@mui/material";
 import UserForm from "./components/UserForm";
 import UserList from "./components/UserList";
 import type { User } from "./types/user";
+import './App.css';
 import {
   getUsers,
   createUser,
