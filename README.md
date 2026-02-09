@@ -51,3 +51,22 @@ git clone https://github.com/ShailajaTripathi/userhub-react-crud
 cd userhub-react-crud
 npm install
 npm run dev
+```
+ ## 🌐 API Used
+
+The application consumes a REST API hosted on Render:
+
+  🔗 https://userhub-react-crud.onrender.com/users
+
+
+This API supports full CRUD operations.
+
+## 📌 Design Decisions
+
+- Used TypeScript for better type safety and maintainability
+
+- Decoupled frontend and backend for flexibility
+
+- Used a lightweight REST API to focus on frontend architecture
+
+- Prioritized clean, readable, and modular code
