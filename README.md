@@ -1,33 +1,53 @@
-# UserHub – React CRUD Application
+# 🧩 UserHub – React CRUD Application
 
-UserHub is a simple React-based CRUD (Create, Read, Update, Delete) application for managing user data.  
-The application is designed with extensibility in mind, allowing new form fields to be added with minimal code changes.
+UserHub is a simple and extensible **React + TypeScript CRUD application** for managing user data.  
+It demonstrates clean frontend architecture, API integration, and scalability-focused design.
 
 ---
 
-## 🚀 Tech Stack
+## 🚀 Live Demo
+🔗 https://userhub-react-crud.vercel.app/
 
-- React (Vite)
-- TypeScript
-- Material UI
-- Axios
-- JSON-server (mock API)
+## 📦 Source Code
+🔗 https://github.com/ShailajaTripathi/userhub-react-crud
+
+---
+
+## 🛠 Tech Stack
+- **React (Vite)**
+- **TypeScript**
+- **REST API (json-server hosted on Render)**
+- **CSS**
+- **Vercel** (Frontend Deployment)
 
 ---
 
 ## ✨ Features
-
 - Create, Read, Update, Delete users
-- Form validation with required field enforcement
-- Config-driven, extensible form architecture
-- Clean and modular React code structure
-- Mock API integration using JSON-server
+- Required-field form validation
+- Clean and modular component structure
+- API integration with async handling
+- Easily extensible form architecture
+- Deployed and accessible on all systems
 
 ---
 
-## 📦 Setup Instructions
+## 🧠 Extensibility (Key Requirement)
+The user form is designed to be **configuration-driven**.
 
-### 1. Clone the repository
+### Adding a new field (e.g. `address`, `dateOfBirth`):
+1. Add the field to the form configuration/schema
+2. Ensure the backend accepts the new field
+3. No major UI or logic changes required
+
+This keeps the application scalable and maintainable.
+
+---
+
+## ⚙️ Local Setup
+
 ```bash
 git clone https://github.com/ShailajaTripathi/userhub-react-crud
 cd userhub-react-crud
+npm install
+npm run dev
