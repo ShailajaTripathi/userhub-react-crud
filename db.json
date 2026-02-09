@@ -1,11 +1,3 @@
 {
-  "users": [
-    {
-      "id": "53cc",
-      "firstName": "lala",
-      "lastName": "abc",
-      "email": "shailaja24305@gmail.com",
-      "phone": "1234566"
-    }
-  ]
+  "users": []
 }
